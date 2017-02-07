@@ -1,7 +1,6 @@
-# angular-quickstart
+# bootstrap-quickstart
 
-Quickstart app with angular 1, bootstrap-sass and routing with ui-route.
-It's prepared for multiple angular module.
+Quickstart app with bootstrap-sass 3.x.x.
 
 ##Prerequisites
 You need:
@@ -12,7 +11,7 @@ You need:
 
 ###Clone
 ```
-git clone --depth=1 https://github.com/elnino3800/angular-quickstart.git <your-project-name>
+git clone --depth=1 https://github.com/elnino3800/bootstrap-quickstart.git <your-project-name>
 cd <your-project-name>
 ```
         
@@ -23,7 +22,7 @@ npm install
 
 ###Run
 ```
-gulp
+npm start
 ```
 (run default gulp task) - run watching sass files, start browser-sync server and open browser with running app
 
@@ -45,7 +44,6 @@ Task runner for develop, deploy, test, etc. [http://gulpjs.com/](http://gulpjs.c
 
 * build - build distribution
     * clean - clean dist directory
-    * html - copy html from src to dist directory
     * templates - copy html templates from src/app directory and create angular module with template cache
     * fonts - copy fonts from src to dist directory
     * images - copy images from src to dist directory
