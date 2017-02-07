@@ -12,11 +12,24 @@ var gulp = require('gulp'),
     gulpif = require('gulp-if'),
     cleanCss = require('gulp-clean-css');
 
+var postcss      = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+
 var options = {
 		sass:{
 			precision: 8,
 			includePaths: ['node_modules/bootstrap-sass/assets/stylesheets']
-		}
+		},
+		autoprefixer: { add: false, browsers: [
+			  "Android 2.3",
+			  "Android >= 4",
+			  "Chrome >= 20",
+			  "Firefox >= 24",
+			  "Explorer >= 8",
+			  "iOS >= 6",
+			  "Opera >= 12",
+			  "Safari >= 6"
+			] }
 };
 
 var src = {
@@ -47,6 +60,7 @@ gulp.task('sass', function () {
         .on('error', function (error) {
             console.error(error);
         })
+        .pipe(postcss([ autoprefixer(options.autoprefixer) ]))
         .pipe(gulp.dest(src.css))
         .pipe(browserSync.reload({
                 stream: true
