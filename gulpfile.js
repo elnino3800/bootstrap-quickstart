@@ -41,7 +41,7 @@ src.css = src + '/css';
 src.sass = src + '/sass/**/*.scss';
 src.fonts = src + '/fonts';
 src.images = src + '/img/**/*.{gif,jpg,jpeg,png,webp}';
-src.index = src + '/index.html';
+src.index = src + '/**/*.html';
 
 var dist = {
     toString: function () {
