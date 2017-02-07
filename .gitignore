@@ -2,6 +2,6 @@
 /.settings
 .project
 /dist
-/css
+/src/css
 /node_modules
 # Created by .ignore support plugin (hsz.mobi)
