@@ -24,7 +24,7 @@ npm install
 ```
 npm start
 ```
-- run watching sass files, start dev server
+run watching sass files, start dev server
 
 ###Build
 ```
