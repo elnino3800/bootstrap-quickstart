@@ -4,4 +4,5 @@
 /dist
 /src/css
 /node_modules
+*.iml
 # Created by .ignore support plugin (hsz.mobi)
