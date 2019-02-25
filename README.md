@@ -1,6 +1,6 @@
 # bootstrap-quickstart
 
-Quickstart app with bootstrap-sass 3.x.x.
+Quickstart app with Bootstrap sass 4.x.x, webpack 4.
 
 ##Prerequisites
 You need:
@@ -24,28 +24,11 @@ npm install
 ```
 npm start
 ```
-(run default gulp task) - run watching sass files, start browser-sync server and open browser with running app
+- run watching sass files, start dev server
 
 ###Build
 ```
-gulp build
+npm rum build
 ```
 create dist directory with minification, uglification, copyfication, ... :)
     
-##Gulp
-Task runner for develop, deploy, test, etc. [http://gulpjs.com/](http://gulpjs.com/)
-    
-###Gulp tasks:
-* sass - compile scss(sass) file into css
-* watch - watching folder with scss files changes and run sass task on change
-* browserSync - run server and open browser - serving files from src directory
-* browserSyncDist - run server and open browser - serving files from dist directory
-* dist - shortcut for browserSyncDist task
-
-* build - build distribution
-    * clean - clean dist directory
-    * templates - copy html templates from src/app directory and create angular module with template cache
-    * fonts - copy fonts from src to dist directory
-    * images - copy images from src to dist directory
-    * buildIndex - process index.html from src, merge css and js to one file. Do uglification and minification. Ad revision number to js and css.
-    * cleanBuild - clean after build
