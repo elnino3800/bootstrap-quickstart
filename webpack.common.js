@@ -35,12 +35,12 @@ const config = {
             {
                 test: /\.scss$/,
                 use: [
-                    "style-loader?sourceMap", // creates style nodes from JS strings
+                    "style-loader", // creates style nodes from JS strings
                     {
                         loader: MiniCssExtractPlugin.loader
                     },
                     {
-                        loader: "css-loader?sourceMap",
+                        loader: "css-loader",
                         options: {
                             sourceMap: true
                         }
