@@ -1,5 +1,5 @@
-import "./sass/bootstrap-custom.scss"
-import "./sass/main.scss"
-import "jquery";
+import "./style/main.scss"
+
+import * as $ from "jquery";
 import "popper.js";
-import  "bootstrap/dist/js/bootstrap"
+import "bootstrap";
